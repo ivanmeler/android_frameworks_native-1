@@ -178,7 +178,7 @@ SurfaceFlinger::SurfaceFlinger()
 
 #ifdef SAMSUNG_HDMI_SUPPORT
     ALOGD(">>> Run service");
-    android::SecTVOutService::instantiate();
+    //android::SecTVOutService::instantiate();
 #if defined(SAMSUNG_EXYNOS5250)
     mHdmiClient = SecHdmiClient::getInstance();
     mHdmiClient->setHdmiEnable(1);
